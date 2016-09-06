@@ -184,3 +184,6 @@ gem 'spreadsheet'
 
 #multistep
 gem 'wicked'
+
+#rolify
+gem 'rolify'
