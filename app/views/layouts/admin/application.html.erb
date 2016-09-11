@@ -8,22 +8,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if flash[:notice] %>
-    <div class="alert alert-success">
-      <%= flash[:notices] %>
-    </div>
-  <% end %>
-  <% if flash[:alert] %>
-    <div class="alert alert-danger">
-      <%= flash[:alert] %>
-    </div>
-  <% end %>
+
 
   <section class="body">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-
+          <% if flash[:notice] %>
+            <div class="alert alert-success">
+              <%= flash[:notices] %>
+            </div>
+          <% end %>
+          <% if flash[:alert] %>
+            <div class="alert alert-danger">
+              <%= flash[:alert] %>
+            </div>
+          <% end %>
             <%= yield %>
         </div>
       </div>
