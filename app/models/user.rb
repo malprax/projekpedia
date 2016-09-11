@@ -16,10 +16,10 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   validates :password, presence: true
   validates :password, confirmation: true
-  
+
   has_many :biographies, dependent: :destroy
   has_many :postjobs, dependent: :destroy
-  has_many :applyjobs, dependet: :destroy
+  has_many :applyjobs, dependent: :destroy
 
   attr_accessor :password, :password_confirmation, :login
 
