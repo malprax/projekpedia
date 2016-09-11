@@ -1,5 +1,8 @@
 class PostjobsController < ApplicationController
   before_action :set_postjob, only: [:show, :edit, :update, :destroy]
+  def home
+    #code
+  end
 
   # GET /postjobs
   # GET /postjobs.json
