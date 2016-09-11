@@ -8,7 +8,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <%= render 'partition/navigation' %>
+
+<% if flash[:notice] %>
+  <div class="alert alert-success">
+    <%= flash[:notices] %>
+  </div>
+<% end %>
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+s
 <%= yield %>
 
 </body>

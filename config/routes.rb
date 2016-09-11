@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   resources :applyjobs
   resources :biographies
   resources :users
@@ -8,6 +10,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'postjobs#home'
+  namespace :admin do
+    resources :sessions
+    get 'login' => 'sessions#new', :as => 'login'
+    get 'logout' => 'sessions#destroy', :as => 'logout'
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
