@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projekpedia Login</title>
+  <%= stylesheet_link_tag    'admin/login', media: 'all', 'data-turbolinks-track' => true %>
+  <%#= javascript_include_tag 'admin/application', 'data-turbolinks-track' => true %>
+  <meta name="description" content="Projekpedia">
+  <meta name="author" content="Admin Projekpedia">
+  <meta name="keywords" content="projekpedia">
+  <%= favicon_link_tag 'logo.ico', :rel => 'shortcut icon' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<section class="body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+
+          <%= yield %>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
