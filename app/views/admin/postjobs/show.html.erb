@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @postjob.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @postjob.content %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @postjob.client_id %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @postjob.timestamp %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @postjob.price %>
+</p>
+
+<%= link_to 'Edit', edit_postjob_path(@postjob) %> |
+<%= link_to 'Back', postjobs_path %>
