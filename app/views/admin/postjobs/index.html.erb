@@ -1,7 +1,7 @@
 <% if @postjobs.present? %>
 <div class="container">
   <div class="row">
-    <h1 class="lead">Daftar Projek&nbsp;&nbsp;<%= link_to 'Buat Projek', new_postjob_path, class:'btn btn-default' %></h1>
+    <h1 class="lead">Daftar Projek&nbsp;&nbsp;<%= link_to 'Buat Projek', new_admin_postjob_path, class:'btn btn-default' %></h1>
 
     <table class="table table-hover table-striped">
       <thead>
@@ -38,7 +38,7 @@
 <% else %>
 <div class="container">
   <div class="row">
-    <h3 class="lead">Maaf belum ada projek.. <%#= link_to 'Buat Projek', new_postjob_path, class:'btn btn-default' %></h3>
+    <h3 class="lead">Maaf belum ada projek.. &nbsp;&nbsp;<%= link_to 'Buat Projek', new_admin_postjob_path, class:'btn btn-default' %></h3>
   </div>
 </div>
 <% end %>

@@ -7,7 +7,7 @@ class Admin::PostjobsController < ApplicationController
   # GET /postjobs
   # GET /postjobs.json
   def index
-    @postjobs = Postjob.all
+    @postjobs = Postjob.order('created_at asc')
   end
 
   # GET /postjobs/1
