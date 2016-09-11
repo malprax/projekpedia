@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  freelance_id: MyString
+  price: 1.5
+  estimate: MyString
+  applyletter: MyText
+  fee: 1.5
+
+two:
+  freelance_id: MyString
+  price: 1.5
+  estimate: MyString
+  applyletter: MyText
+  fee: 1.5

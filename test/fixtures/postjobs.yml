@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: postjobs
+#
+#  id         :integer          not null, primary key
+#  title      :string
+#  content    :text
+#  client_id  :string
+#  timestamp  :string
+#  price      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  client_id: MyString
+  timestamp: MyString
+  price: MyString
+
+two:
+  title: MyString
+  content: MyText
+  client_id: MyString
+  timestamp: MyString
+  price: MyString

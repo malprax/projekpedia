@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Applyjobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Freelance</th>
+      <th>Price</th>
+      <th>Estimate</th>
+      <th>Applyletter</th>
+      <th>Fee</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applyjobs.each do |applyjob| %>
+      <tr>
+        <td><%= applyjob.freelance_id %></td>
+        <td><%= applyjob.price %></td>
+        <td><%= applyjob.estimate %></td>
+        <td><%= applyjob.applyletter %></td>
+        <td><%= applyjob.fee %></td>
+        <td><%= link_to 'Show', applyjob %></td>
+        <td><%= link_to 'Edit', edit_applyjob_path(applyjob) %></td>
+        <td><%= link_to 'Destroy', applyjob, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Applyjob', new_applyjob_path %>

@@ -1,0 +1,1 @@
+json.array! @postjobs, partial: 'postjobs/postjob', as: :postjob

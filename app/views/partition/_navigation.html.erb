@@ -1,0 +1,57 @@
+<!-- Navigasi Tanpa Login -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#"></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li ><%= link_to "Perpustakaan", '#' %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akademik <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+
+              <li ><%= link_to "Perpustakaan", '#' %></li>
+            <li><%= link_to "Penasehat Akademik", "#" %></li>
+            <li ><%= link_to "Kalender Akademik", '#' %></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sipil<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li ><%#= link_to "Aturan Kuliah", '#' %></li>
+              <li ><%= link_to "Perpustakaan", '#' %></li>
+            <li ><%= link_to "Jadwal Kuliah", '#' %></li>
+            <li><%#= link_to "Nilai", "#" %></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elektro<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li ><%#= link_to "Aturan Kuliah", '#' %></li>
+              <li ><%= link_to "Perpustakaan", '#' %></li>
+              <li ><%= link_to "Perpustakaan", '#' %></li>
+          </ul>
+        </li>
+        <li ><%= link_to "Perpustakaan", '#' %></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><%#= link_to "Log in", admin_login_path %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Akhir Navigasi Tanpa Login -->

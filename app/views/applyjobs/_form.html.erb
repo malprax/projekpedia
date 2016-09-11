@@ -1,0 +1,15 @@
+<%= simple_form_for(@applyjob) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :freelance_id %>
+    <%= f.input :price %>
+    <%= f.input :estimate %>
+    <%= f.input :applyletter %>
+    <%= f.input :fee %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

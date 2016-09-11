@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Freelance:</strong>
+  <%= @applyjob.freelance_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @applyjob.price %>
+</p>
+
+<p>
+  <strong>Estimate:</strong>
+  <%= @applyjob.estimate %>
+</p>
+
+<p>
+  <strong>Applyletter:</strong>
+  <%= @applyjob.applyletter %>
+</p>
+
+<p>
+  <strong>Fee:</strong>
+  <%= @applyjob.fee %>
+</p>
+
+<%= link_to 'Edit', edit_applyjob_path(@applyjob) %> |
+<%= link_to 'Back', applyjobs_path %>

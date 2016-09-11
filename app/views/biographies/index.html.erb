@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Biographies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>City</th>
+      <th>Address</th>
+      <th>Image</th>
+      <th>Ability</th>
+      <th>Geolocation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @biographies.each do |biography| %>
+      <tr>
+        <td><%= biography.user_id %></td>
+        <td><%= biography.city %></td>
+        <td><%= biography.address %></td>
+        <td><%= biography.image %></td>
+        <td><%= biography.ability %></td>
+        <td><%= biography.geolocation %></td>
+        <td><%= link_to 'Show', biography %></td>
+        <td><%= link_to 'Edit', edit_biography_path(biography) %></td>
+        <td><%= link_to 'Destroy', biography, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Biography', new_biography_path %>

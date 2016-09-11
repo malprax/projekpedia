@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @biography.user_id %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @biography.city %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @biography.address %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @biography.image %>
+</p>
+
+<p>
+  <strong>Ability:</strong>
+  <%= @biography.ability %>
+</p>
+
+<p>
+  <strong>Geolocation:</strong>
+  <%= @biography.geolocation %>
+</p>
+
+<%= link_to 'Edit', edit_biography_path(@biography) %> |
+<%= link_to 'Back', biographies_path %>

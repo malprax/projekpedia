@@ -1,0 +1,1 @@
+json.partial! "applyjobs/applyjob", applyjob: @applyjob

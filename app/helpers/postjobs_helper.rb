@@ -1,0 +1,2 @@
+module PostjobsHelper
+end

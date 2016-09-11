@@ -1,0 +1,16 @@
+<%= simple_form_for(@biography) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :user_id %>
+    <%= f.input :city %>
+    <%= f.input :address %>
+    <%= f.input :image %>
+    <%= f.input :ability %>
+    <%= f.input :geolocation %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
