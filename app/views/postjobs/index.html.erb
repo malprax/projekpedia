@@ -1,33 +1,44 @@
-<h1>Listing Postjobs</h1>
+<% if @postjobs.present? %>
+<div class="container">
+  <div class="row">
+    <h1 class="lead">Daftar Projek&nbsp;&nbsp;<%= link_to 'Buat Projek', new_postjob_path, class:'btn btn-default' %></h1>
 
-<table class="table table-hover table-striped">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Client</th>
-      <th>Timestamp</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Konten</th>
+          <th>Klien</th>
+          <th>Timestamp</th>
+          <th>Nilai</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @postjobs.each do |postjob| %>
-      <tr>
-        <td><%= postjob.title %></td>
-        <td><%= postjob.content %></td>
-        <td><%= postjob.client_id %></td>
-        <td><%= postjob.timestamp %></td>
-        <td><%= postjob.price %></td>
-        <td><%= link_to 'Show', postjob %></td>
-        <td><%= link_to 'Edit', edit_postjob_path(postjob) %></td>
-        <td><%= link_to 'Destroy', postjob, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @postjobs.each do |postjob| %>
+          <tr>
+            <td><%= postjob.title %></td>
+            <td><%= postjob.content %></td>
+            <td><%= postjob.client_id %></td>
+            <td><%= postjob.timestamp %></td>
+            <td><%= postjob.price %></td>
+            <td><%= link_to 'Edit', edit_postjob_path(postjob) %></td>
+            <td><%= link_to 'Hapus', postjob, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<br>
+    <br>
 
-<%= link_to 'New Postjob', new_postjob_path %>
+
+  </div>
+</div>
+<% else %>
+<div class="container">
+  <div class="row">
+    <h3 class="lead">Maaf belum ada projek.. <%= link_to 'Buat Projek', new_postjob_path, class:'btn btn-default' %></h3>
+  </div>
+</div>
+<% end %>

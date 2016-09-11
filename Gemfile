@@ -137,7 +137,7 @@ gem 'figaro'
 #gem 'delayed_job_active_record'
 
 #list our database
-gem 'annotate'
+# gem 'annotate'
 
 #caching
 gem 'actionpack-page_caching'

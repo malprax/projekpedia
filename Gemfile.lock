@@ -87,9 +87,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    annotate (2.7.1)
-      activerecord (>= 3.2, < 6.0)
-      rake (>= 10.4, < 12.0)
     arel (6.0.3)
     autoprefixer-rails (6.4.1)
       execjs
@@ -476,7 +473,6 @@ PLATFORMS
 DEPENDENCIES
   actionpack-action_caching
   actionpack-page_caching
-  annotate
   autoprefixer-rails
   barby
   bcrypt (~> 3.1.7)
