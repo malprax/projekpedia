@@ -20,10 +20,10 @@
         <tbody>
           <% @engineers.each do |engineer| %>
             <tr>
-              <td><%= engineer.name %></td>
-              <td><%= engineer.functionality %></td>
-              <td><%= engineer.last_graduate %></td>
-              <td><%= engineer.skill %></td>
+              <td><%= engineer.name.titleize %></td>
+              <td><%= engineer.functionality.titleize %></td>
+              <td><%= engineer.last_graduate.upcase %></td>
+              <td><%= engineer.skill.titleize %></td>
               <% if current_user %>
               <td><%= link_to 'Edit', edit_engineer_path(engineer), class:'btn btn-warning' %>&nbsp;&nbsp;<%= link_to 'Destroy', engineer, method: :delete, data: { confirm: 'Anda Yakin?' }, class:'btn btn-danger' %></td>
               <% end %>
