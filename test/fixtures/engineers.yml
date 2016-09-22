@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  functionality: MyString
+  last_graduate: MyString
+  skill: MyString
+
+two:
+  name: MyString
+  functionality: MyString
+  last_graduate: MyString
+  skill: MyString

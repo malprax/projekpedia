@@ -1,0 +1,14 @@
+<%= simple_form_for(@engineer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :functionality %>
+    <%= f.input :last_graduate %>
+    <%= f.input :skill %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

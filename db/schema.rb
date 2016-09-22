@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160911050844) do
+ActiveRecord::Schema.define(version: 20160922135151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,15 @@ ActiveRecord::Schema.define(version: 20160911050844) do
     t.string   "geolocation"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "engineers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "functionality"
+    t.string   "last_graduate"
+    t.string   "skill"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "postjobs", force: :cascade do |t|

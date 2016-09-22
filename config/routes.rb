@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :engineers
   resources :applyjobs
   resources :biographies
   resources :users
